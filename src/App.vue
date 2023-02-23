@@ -15,6 +15,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <el-button type="success">123</el-button>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
