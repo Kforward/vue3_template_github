@@ -5,17 +5,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue"
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "About",
-  setup(props, ctx){
+  name: "AboutComponent",
+  setup(props, ctx) {
     // const { attrs, slots, emit, expose } = ctx
     console.log("ctx", ctx);
     console.log("props", props);
-    
-  }
-})
+  },
+});
 </script>
 
 <style>
