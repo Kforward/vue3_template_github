@@ -15,6 +15,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <el-button type="success" class="custom-btn">123</el-button>
       <el-button type="success">123</el-button>
 
       <nav>
@@ -61,6 +62,10 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
+}
+
+.custom-btn {
+  --el-color-success: pink;
 }
 
 @media (min-width: 1024px) {
