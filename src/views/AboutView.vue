@@ -5,13 +5,9 @@
 </template>
 
 <script lang="ts">
-<<<<<<< HEAD
-import { defineComponent } from "vue";
-=======
 import { defineComponent, reactive } from "vue"
 
 import {stack, stackObj} from '../utils/StackArray.js';
->>>>>>> 76f06d1 (feat: 数据结构练习-栈)
 
 export default defineComponent({
   name: "AboutComponent",
@@ -19,10 +15,6 @@ export default defineComponent({
     // const { attrs, slots, emit, expose } = ctx
     console.log("ctx", ctx);
     console.log("props", props);
-<<<<<<< HEAD
-  },
-});
-=======
     const list = reactive([
       {
         id: 1000,
@@ -78,7 +70,6 @@ export default defineComponent({
     return {list, traversal}
   }
 })
->>>>>>> 76f06d1 (feat: 数据结构练习-栈)
 </script>
 
 <style>
