@@ -1,3 +1,7 @@
+/**
+ * 栈
+ */
+
 interface Obj {
     [index: number]: any
 }
