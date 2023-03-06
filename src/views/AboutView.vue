@@ -1,11 +1,11 @@
 <template>
   <div class="about">
-    <el-button v-for="item in list" :key="item.id" @click="traversal">{{ item.name }}</el-button>
+    <el-button v-for="item in list" :key="item.id" @click="traversal">{{ item.name }}</el-button>Vnode
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from "vue"
+import { defineComponent, reactive, h } from "vue"
 
 import {stack, stackObj} from '../utils/StackArray.js';
 
@@ -33,7 +33,7 @@ export default defineComponent({
         id: 2000,
         name: 5
       }
-    ])
+    ]);
     
     stackObj.push(1)
     stackObj.push(2)
@@ -68,6 +68,8 @@ export default defineComponent({
     }
 
     return {list, traversal}
+    // 渲染函数
+    // return () => h('div', {id: 'foo', class: 'bar', innerHTML: 'hello'});
   }
 })
 </script>
