@@ -20,6 +20,6 @@ function handleClick(): void {
 function handleEvent(param: string): void {
     console.log('接收');
     
-    message.value = `我是我自己 - 我接收到的消息 ===> ${param}`
+    message.value = `我是我自己 - 来自子组件的消息 ===> ${param}`
 }
 </script>

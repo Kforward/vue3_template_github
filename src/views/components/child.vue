@@ -1,5 +1,5 @@
 <template>
-    <el-button @click="handleClick">点击</el-button>
+    <el-button type="primary" plain @click="handleClick">点击</el-button>
 </template>
 
 <script lang="ts" setup>
